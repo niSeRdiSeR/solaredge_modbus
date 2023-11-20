@@ -632,7 +632,7 @@ class Battery(SolarEdge):
 
     def __init__(self, offset=False, *args, **kwargs):
         self.model = f"Battery{offset + 1}"
-        self.wordorder = Endian.Little
+        self.wordorder = Endian.LITTLE
 
         super().__init__(*args, **kwargs)
 
